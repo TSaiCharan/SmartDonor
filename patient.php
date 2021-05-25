@@ -4,23 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
-        <!-- Page Logo -->
-        <link rel="shortcut icon" href="/ImageSource/logo.png" type="image/x-icon">
-
-        <!-- Required Css -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/NavBar/navbar.css">
-
-        <!-- JQuery -->
+        <title>DonateOrgan</title>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div class="navbar"></div>
+        <div id="navbar"></div>
         <script>
             $(function() {
-                $(".navbar").load("/NavBar/navbar.html");
+                $("#navbar").load("navbar.php");
             });
         </script>
     </body>
