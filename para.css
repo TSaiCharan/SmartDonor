@@ -1,0 +1,17 @@
+.data{
+    margin-left: 150px;
+    width: 1200px;
+}
+p{
+    padding-top: 50px;
+    padding-left:130px;
+    padding-right:130px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    background-color:rgb(176, 240, 240);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h3{
+    text-align: center;
+    background-color: rgb(144, 212, 212);
+}
