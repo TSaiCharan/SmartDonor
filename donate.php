@@ -19,27 +19,57 @@
         </script>
 
         <div class="formcontainer">
-                <div class="container">
+            <div class="container">
 
-                    <label for="name"><strong>Name</strong></label>
-                    <input type="text" placeholder="Enter Name" name="name" id="name" required>
-                    
-                    <label for="mail"><strong>E-mail</strong></label>
-                    <input type="text" placeholder="Enter E-mail" name="mail" id="mail" required>
-                    
-                    <label for="number"><strong>Phone Number</strong></label>
-                    <input type="text" placeholder="Enter Phone Number" name="number" id="phoneNumber" pattern="^[0-9]{10}$" required>
-                    
-                    <label for="psw"><strong>Password</strong></label>
-                    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+                <label for="name"><strong>Name of Donor</strong></label>
+                <input type="text" placeholder="Enter Name of Donor" name="name" id="name" required>
 
-                    <label for="con_psw"><strong>Confirm Password</strong></label>
-                    <input type="password" placeholder="Enter Confirm Password" name="con_psw" id="confirmPassword" required>
-                    <center>
-                        <input type="checkbox"  checked="checked" name="remember"> Agree for terms and conditions
-                    </center>
-                </div>
-                <button type="submit" onclick="validatePassword()"><strong>SIGN UP</strong></button>
+                <label for="number"><strong>Family Mobile Number</strong></label>
+                <input type="text" placeholder="Enter Family Mobile Number" name="number" id="phoneNumber" pattern="^[0-9]{10}$" required>
+                
+                <label for="number"><strong>Date of Birth</strong></label>
+                <input type="date" name="dob" id="dob" required><br>
+
+                <label for="organ"><strong>Select your blood group</strong></label>
+                <select>
+                    <option>Blood Group</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select><br>
+                
+                <label for="organ"><strong>Select organ to donate</strong></label>
+                <select>
+                    <option>Select Organ</option>
+                    <option>Kidney</option>
+                    <option>Liver</option>
+                    <option>Lungs</option>
+                    <option>Heart</option>
+                    <option>Pancreas</option>
+                    <option>Intestines</option>
+                    <option>Hands</option>
+                    <option>Face</option>
+                </select><br>
+
+                <label for="disease"><strong>Enter all your diseases seperating with ,</strong></label>
+                <input type="text" name="diseases" id="diseases">
+                <center>
+                    <input type="checkbox"  checked="checked" name="remember"> Agree for terms and conditions
+                </center>
             </div>
+            <button type="submit" onclick="donate()"><strong>DONATE NOW</strong></button>
+        </div>
+        <script>
+            function donate()
+            {
+                alert("Donor details saved successfully");
+                window.open("./index.php","_self");
+            }
+        </script>
     </body>
 </html>
