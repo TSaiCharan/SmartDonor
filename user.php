@@ -26,7 +26,7 @@
                                 <a href="profile.php">Profile</a>
                             </li>
                             <li>
-                                <a href="#">FAQ</a>
+                                <a href="#">FAQ's</a>
                             </li>
                             <li>
                                 <a href="logout.php">
