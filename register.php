@@ -44,9 +44,6 @@
                     <label for="con_psw"><strong>Confirm Password</strong></label>
                     <input type="password" placeholder="Enter Confirm Password" name="con_psw" id="confirmPassword" required>
 
-                    <label for="photo"><strong>Upload a photo</strong></label>
-                    <input type="file" placeholder="Enter Confirm Password" name="photo" id="photo" accept="image/*" required>
-                    <!-- <input type="file" id="img" name="img" accept="image/*"> -->
                     <center>
                         <input type="checkbox"  checked="checked" name="remember"> Agree for terms and conditions
                     </center>

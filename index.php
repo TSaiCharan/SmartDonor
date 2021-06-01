@@ -20,7 +20,7 @@
         <!-- Firebase Scripts-->
         <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 
     </head>
     <body>
@@ -62,7 +62,19 @@
             <strong>The Ministry of Health & Family Welfare has urged people all of communities to come forth and generously donate organs to help the noble cause of saving precious lives. The Ministry had launched the 6th World and first ever Indian Organ Donation Day and Organ Donation Congress 2010 in New Delhi.
             NOTTO (National Organ Tissue Transplant Organization) is celebrating 6th Indian Organ Donation Day on 27th November 2015. On this day Union Health Ministry has appealed to its officials to take the pledge to donate their organs, thereby saving thousands of lives.</strong></p>
         </div>
+        
         <!-- End of static data -->
+
+        <!-- Displaying active requests -->
+        <div class="activeRequests"></div>
+        <script>
+            $(function() {
+                $(".activeRequests").load("activeRequests.php");
+            });
+        </script>
+
+
+        <!-- End of active requests -->
 
         <!-- footer -->
         <div class="footer"></div>

@@ -51,7 +51,6 @@ function validatePassword()
         alert("Confirm password cannot be empty");
     }
     else if(pass==conPass){
-        console.log("her");
         createUser();
     }
     else {
