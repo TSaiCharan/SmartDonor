@@ -52,8 +52,6 @@
                     <option>Heart</option>
                     <option>Pancreas</option>
                     <option>Intestines</option>
-                    <option>Hands</option>
-                    <option>Face</option>
                 </select><br>
 
                 <label for="disease"><strong>Enter all your diseases seperating with ,</strong></label>
